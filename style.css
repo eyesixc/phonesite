@@ -1,0 +1,452 @@
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Montserrat, sans-serif;
+        background-color: #D1E8FF;
+        overflow-x: hidden;
+    }
+
+    .shapka{
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .shapka::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 100%;
+        height: 130px;
+        background: linear-gradient(to bottom, #D1E8FF, rgba(158, 204, 250, 0));
+        z-index: -1;
+    }
+
+
+    .gmail{
+        margin-top: 30px;
+        display: block;
+        font-size: 9px;
+        color: #49423d;
+        font-weight: bold;
+    }
+
+    .text{
+        position: relative;
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .line {
+        position: absolute;
+        width: 50%;
+        height: 1px; /* Толщина линии */
+        background-color: black; /* Цвет линии */
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    .line.left {
+        left: 0; /* Начать левую линию от левого края контейнера */
+        width: 25%; /* Ширина левой линии (можете регулировать по вашему вкусу) */
+    }
+
+    .line.right {
+        right: 0; /* Начать правую линию от правого края контейнера */
+        width: 25%; /* Ширина правой линии (можете регулировать по вашему вкусу) */
+    }
+    .swiper-container {
+        top:-79px;
+        position: relative;
+        width: 100%;
+        max-width: 100%; /* Желаемая максимальная ширина для десктопа и планшетов */
+        margin: 0 auto;
+        height: 500px; /* Задайте желаемую высоту слайдера */
+        z-index: 0;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Обрезать изображение до заполнения контейнера */
+    }
+    /* Скрытие изображений по умолчанию */
+    .swiper-slide:not(.swiper-slide-active) .swiper-slide-img {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    }
+
+    /* Показ изображений при активации слайда */
+    .swiper-slide-active .swiper-slide-img {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Стили для индикаторов (кружочков) */
+    .swiper-pagination {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; /* Выравнивание по нижней границе */
+        z-index: 1; /* Поднять поверх изображений */
+        transform: translate(-150px, -210px);
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background-color: #F8F3EA;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: black;
+    }
+
+    .textscidka {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-180px, 30px);
+        z-index: 2;
+        color: #fff; /* Цвет текста, чтобы был виден на фото */
+        text-align: left;
+        width: 100%;
+    }
+
+    .textscidka img{
+        position: relative;
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        top:-90px;
+        left: 195px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        
+    }
+
+    .scidon{
+        font-size: 19px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .promokod{
+        margin-top: 5px;
+        font-size: 13px;
+        color: black; 
+    }
+
+    .textscidka::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -15px;
+        width: 80%;
+        height: 100px;
+        background: rgba(209, 232, 255, 0.8); /* Изменен цвет на #D1E8FF с прозрачностью 0.8 */
+        z-index: -1;
+        border-top-right-radius: 10px; /* Закругление правого верхнего угла */
+        border-bottom-right-radius: 10px; /* Закругление правого нижнего угла */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .podrobno {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-176px, 140px);
+        z-index: 2;
+        color: #fff; /* Цвет текста, чтобы был виден на фото */
+        text-align: center;
+        width: 100%;
+    }
+
+    .podrobno::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 1px;
+        width: 50%;
+        height: 30px;
+        background:black; /* Изменен цвет на #D1E8FF с прозрачностью 0.8 */
+        z-index: -1;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .podrobnotext {
+        position: absolute;
+        left: 20px;
+        font-size: 13px;
+        top: 16px;
+    }
+    
+    
+    .navig {
+        margin-top: -56px;
+    }
+
+    .action {
+        
+        width: 65px; /* Фиксированный размер для каждого .action */
+        height: 65px; /* Фиксированный размер для каждого .action */
+    }
+    
+    .action img {
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #9ECCFA;
+        border: 2px solid grey;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 10px gray; /* Добавляем серый border с отступом */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .textnavig{
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .navig-info {
+        text-align: center; /* Разместить текст по центру */
+        margin-top: -10px;
+    }
+
+    .swiper-container-navig .swiper-slide {
+        margin-right: -300px; /* Уменьшил правый отступ между слайдами */
+    }
+
+    .recomend{
+        position: absolute;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+    
+    .recomendtxt{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .lineright {
+        position: absolute;
+        width: 100%;
+        height: 3px; /* Толщина линии */
+        background-color: black; /* Цвет линии */
+        top: 32px;
+        left: 180px;
+    }
+
+    .recomendpresent{
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .recomend-row {
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping to the next line */
+        margin-bottom: -180px;
+    }
+
+    .recomend-item {
+        margin-right: 10px; /* Add some spacing between items */
+        position: relative;
+    }
+    
+    .artiimg {
+        width: 100%; /* Make the image take the full width of its container */
+        height: auto; /* Maintain the aspect ratio */
+        max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+        object-fit: cover; /* Crop the image to cover the container */
+        display: block;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .rectaangle {
+        position: absolute;
+        width: 100%; /* Ширина будет равна 100% от родительского блока */
+        height: 50%; /* Высота будет равна половине родительского блока */
+        background: linear-gradient(to top, #9ECCFA, transparent);
+        z-index: 1; /* Расположение над изображением */
+        top:8px;
+        left:0px;
+
+    }
+    
+    .artist {
+        position: relative;
+        z-index: 2;
+        bottom: 40%; /* Позиционируем текст по середине высоты прямоугольника */
+        width: 100%;
+        text-align: left; /* Выравниваем текст по центру */
+        font-size: 20px;
+        left:10px;
+        font-weight: bold;
+        text-decoration: underline overline black;
+    }
+
+    .recomend-info {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        bottom: 43%;
+        width: 100%;
+    }
+
+    .recomend-info p span {
+        display: flex;
+        align-items: center; /* Выравниваем текст и изображение по вертикали */
+        margin-right: 10px; /* Добавляем отступ между текстом и изображением (если нужно) */
+    }
+    
+    .recomend-info p img {
+        display: block;
+    }
+
+    .recomend-info p{
+        margin-left: 10px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    
+    .janr,
+    .mesto,
+    .data{
+        margin-bottom: 10px;
+    }
+
+    .podrobnoisp{
+        position: relative;
+        z-index: 2;
+        top:-420px;
+        left: 73px;
+    }
+
+    .podrobnoisptxt{
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .podrobnoisptxt::before {
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 25px;
+        left:-5px;
+        top:-1px;
+        background: rgba(209, 232, 255, 0.8); /* Изменен цвет на #D1E8FF с прозрачностью 0.8 */
+        z-index: -1;
+        border-radius: 10px; /* Закругление правого верхнего угла */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .podrobnoisp1{
+        position: relative;
+        z-index: 2;
+        top:-420px;
+        left: 73px;
+    }
+
+    .podrobnoisptxt1{
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .podrobnoisptxt1::before {
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 25px;
+        left:-5px;
+        top:-1px;
+        background: rgba(209, 232, 255, 0.8); /* Изменен цвет на #D1E8FF с прозрачностью 0.8 */
+        z-index: -1;
+        border-radius: 10px; /* Закругление правого верхнего угла */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .podrobnoisp2{
+        position: relative;
+        z-index: 2;
+        top:-420px;
+        left: 73px;
+    }
+
+    .podrobnoisptxt2{
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .podrobnoisptxt2::before {
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 25px;
+        left:-5px;
+        top:-1px;
+        background: rgba(209, 232, 255, 0.8); /* Изменен цвет на #D1E8FF с прозрачностью 0.8 */
+        z-index: -1;
+        border-radius: 10px; /* Закругление правого верхнего угла */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .podrobnoisp3{
+        position: relative;
+        z-index: 2;
+        top:-420px;
+        left: 73px;
+    }
+
+    .podrobnoisptxt3{
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .podrobnoisptxt3::before {
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 25px;
+        left:-5px;
+        top:-1px;
+        background: rgba(209, 232, 255, 0.8); /* Изменен цвет на #D1E8FF с прозрачностью 0.8 */
+        z-index: -1;
+        border-radius: 10px; /* Закругление правого верхнего угла */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .fixmenu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* цвет фона, если необходимо */
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* тень, если необходимо */
+        display: flex;
+        padding: 10px;
+        z-index: 5;
+    }
+    
+
+    .fixmenu div {
+        cursor: pointer; /* добавьте эту строку, если хотите добавить курсор указателя при наведении */
+        display: flex;
+        align-items: center; /* выравнивание изображений по центру вертикали внутри блока */
+    }
+    
+    .fixmenu img {
+        width: 24px; /* задайте желаемую ширину для изображений */
+        margin-right: 60px; /* расстояние между изображением и текстом (если есть) */
+    }
+    
+    
+}
