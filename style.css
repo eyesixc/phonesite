@@ -272,7 +272,7 @@
         height: 50%; /* Высота будет равна половине родительского блока */
         background: linear-gradient(to top, #9ECCFA, transparent);
         z-index: 1; /* Расположение над изображением */
-        top:8px;
+        top:10px;
         left:0px;
 
     }
