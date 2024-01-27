@@ -36,7 +36,7 @@
     .text{
         position: relative;
         display: block;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
     }
 
@@ -269,11 +269,11 @@
     .rectaangle {
         position: absolute;
         width: 100%; /* Ширина будет равна 100% от родительского блока */
-        height: 50%; /* Высота будет равна половине родительского блока */
+        height: 52%; /* Высота будет равна половине родительского блока */
         background: linear-gradient(to top, #9ECCFA, transparent);
         z-index: 1; /* Расположение над изображением */
-        top:10px;
-        left:0px;
+        top:auto;
+        left:auto;
 
     }
     
